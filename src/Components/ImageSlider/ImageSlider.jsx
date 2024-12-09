@@ -29,17 +29,11 @@ function ImageSlider() {
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-gray-100">
       <div className="relative w-full max-w-lg">
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi quo
-          repudiandae accusantium tenetur culpa maxime quod officiis porro
-          voluptatum a sequi, quibusdam amet facilis corrupti dolorem quia
-          voluptatem consectetur aliquam!
-        </p>
         <div className="overflow-hidden rounded-lg shadow-lg">
           <img
             src={images[currentIndex]}
             alt={`Slide ${currentIndex + 1}`}
-            className="w-full h-64 object-cover transition-all duration-500 ease-in-out"
+            className="w-full object-cover transition-all duration-500 ease-in-out"
           />
         </div>
         <button
