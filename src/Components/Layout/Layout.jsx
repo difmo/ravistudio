@@ -8,7 +8,7 @@ function Layout() {
     <div>
       <Header />
       <main>
-        {/* Rendering the children components directly */}
+        {/* Rendering the children components directlysdrfsdf */}
         {/* If you use Outlet, it will render nested routes */}
         <Outlet />
       </main>
