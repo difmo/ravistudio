@@ -1,16 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const images = [
-  'https://via.placeholder.com/300?text=Image+1',
-  'https://via.placeholder.com/300?text=Image+2',
-  'https://via.placeholder.com/300?text=Image+3',
-  'https://via.placeholder.com/300?text=Image+4',
-  'https://via.placeholder.com/300?text=Image+5',
-  'https://via.placeholder.com/300?text=Image+6',
-  'https://via.placeholder.com/300?text=Image+7',
-  'https://via.placeholder.com/300?text=Image+8',
-  'https://via.placeholder.com/300?text=Image+9',
-  'https://via.placeholder.com/300?text=Image+10',
+  "https://i.pinimg.com/originals/7e/45/0f/7e450f80598feb3e152744b1cc3dd851.jpg",
+  "https://i.pinimg.com/originals/7e/45/0f/7e450f80598feb3e152744b1cc3dd851.jpg",
+  "https://i.pinimg.com/originals/7e/45/0f/7e450f80598feb3e152744b1cc3dd851.jpg",
+  "https://via.placeholder.com/300?text=Image+4",
+  "https://via.placeholder.com/300?text=Image+5",
+  "https://via.placeholder.com/300?text=Image+6",
+  "https://via.placeholder.com/300?text=Image+7",
+  "https://via.placeholder.com/300?text=Image+8",
+  "https://i.pinimg.com/originals/7e/45/0f/7e450f80598feb3e152744b1cc3dd851.jpg",
+  "https://via.placeholder.com/300?text=Image+10",
 ];
 
 function ImageSlider() {
@@ -29,6 +29,12 @@ function ImageSlider() {
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-gray-100">
       <div className="relative w-full max-w-lg">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi quo
+          repudiandae accusantium tenetur culpa maxime quod officiis porro
+          voluptatum a sequi, quibusdam amet facilis corrupti dolorem quia
+          voluptatem consectetur aliquam!
+        </p>
         <div className="overflow-hidden rounded-lg shadow-lg">
           <img
             src={images[currentIndex]}
@@ -55,7 +61,7 @@ function ImageSlider() {
             key={index}
             onClick={() => setCurrentIndex(index)}
             className={`w-3 h-3 rounded-full ${
-              currentIndex === index ? 'bg-blue-500' : 'bg-gray-400'
+              currentIndex === index ? "bg-blue-500" : "bg-gray-400"
             }`}
           />
         ))}

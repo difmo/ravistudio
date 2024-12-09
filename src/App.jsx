@@ -9,9 +9,12 @@ function App() {
     <div>
       <Router>
         <Routes>
-          <Route path="/" element={<Layout />} />
-          <Route path="Index" element={<Index />} />
-          <Route path="Gallary" element={<Gallary />} />
+          {/* Define the layout route */}
+          <Route path="/" element={<Layout />}>
+            {/* Define child routes */}
+            <Route path="/" element={<Index />} />
+            <Route path="Gallary" element={<Gallary />} />
+          </Route>
         </Routes>
       </Router>
     </div>
