@@ -19,7 +19,8 @@ const Header = () => {
   ];
 
   return (
-    <header className="bg-black text-white">
+    <div className="flex justify-center">
+    <header className="bg-black text-secondary w-4/5 rounded-full">
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
         {/* Logo */}
         <div className="font-bold">
@@ -39,7 +40,7 @@ const Header = () => {
               <li key={link.id}>
                 <Link
                   to={link.path}
-                  className="text-white hover:text-gray-300 transition duration-300"
+                  className="text-secondary hover:text-gray-300 transition duration-500"
                 >
                   {link.name}
                 </Link>
@@ -50,16 +51,16 @@ const Header = () => {
             <li className="relative group">
               <Link
                 to="/photography"
-                className="text-white hover:text-gray-300 transition duration-300"
+                className="text-secondary hover:text-gray-300 transition duration-300 "
               >
                 Photography
               </Link>
-              <div className="absolute left-0 hidden mt-2 space-y-2 bg-black text-white p-4 rounded-lg group-hover:block">
+              <div className="absolute left-0 hidden mt-2 w-3/10 bg-black text-secondary p-4 rounded-lg group-hover:block group-hover:opacity-100 transition-all duration-300 delay-200 w-[150%]">
                 {photographySections.map((section, index) => (
                   <Link
                     key={index}
                     to={section.path}
-                    className="block hover:text-gray-300 transition duration-500"
+                    className="flex flex-col hover:text-black transition duration-500 hover:bg-primary "
                   >
                     {section.name}
                   </Link>
@@ -71,13 +72,14 @@ const Header = () => {
           {/* "Book Us" Button */}
           <Link
             to="/contact"
-            className="bg-yellow-500 text-black px-6 py-2 rounded-lg hover:bg-yellow-400 transition duration-300"
+            className="bg-primary text-secondary px-6 py-2  transition duration-300 rounded-full"
           >
             Book Us
           </Link>
         </nav>
       </div>
     </header>
+    </div>
   );
 };
 
