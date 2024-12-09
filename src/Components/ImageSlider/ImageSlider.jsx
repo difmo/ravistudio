@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 
 const images = [
-  'https://via.placeholder.com/300?text=Image+1',
-  'https://via.placeholder.com/300?text=Image+2',
-  'https://via.placeholder.com/300?text=Image+3',
+  'https://i.pinimg.com/originals/7e/45/0f/7e450f80598feb3e152744b1cc3dd851.jpg',
+  'https://i.pinimg.com/originals/7e/45/0f/7e450f80598feb3e152744b1cc3dd851.jpg',
+  'https://i.pinimg.com/originals/7e/45/0f/7e450f80598feb3e152744b1cc3dd851.jpg',
   'https://via.placeholder.com/300?text=Image+4',
   'https://via.placeholder.com/300?text=Image+5',
   'https://via.placeholder.com/300?text=Image+6',
   'https://via.placeholder.com/300?text=Image+7',
   'https://via.placeholder.com/300?text=Image+8',
-  'https://via.placeholder.com/300?text=Image+9',
+  'https://i.pinimg.com/originals/7e/45/0f/7e450f80598feb3e152744b1cc3dd851.jpg',
   'https://via.placeholder.com/300?text=Image+10',
 ];
 
