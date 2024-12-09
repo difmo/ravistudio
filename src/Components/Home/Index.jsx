@@ -5,7 +5,6 @@ function Index() {
   return (
     <div>
       <ImageSlider />
-      wlkjcnsa c 'iopqwcn s screen\xmsq;lxc sq xaqsxascopn [wc ' xaqsxascopn '
     </div>
   );
 }

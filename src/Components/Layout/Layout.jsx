@@ -3,13 +3,12 @@ import { Outlet } from "react-router-dom";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 
-function Layout() {
+function Layout({ children }) {
   return (
     <div>
       <Header />
       <main>
-        {/* Rendering the children components directlysdrfsdf */}
-        {/* If you use Outlet, it will render nested routes */}
+        {children}
         <Outlet />
       </main>
       <Footer />
