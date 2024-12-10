@@ -1,16 +1,15 @@
 import React, { useState } from "react";
 
 const images = [
-  "https://i.pinimg.com/originals/7e/45/0f/7e450f80598feb3e152744b1cc3dd851.jpg",
-  "https://i.pinimg.com/originals/7e/45/0f/7e450f80598feb3e152744b1cc3dd851.jpg",
-  "https://i.pinimg.com/originals/7e/45/0f/7e450f80598feb3e152744b1cc3dd851.jpg",
-  "https://via.placeholder.com/300?text=Image+4",
-  "https://via.placeholder.com/300?text=Image+5",
-  "https://via.placeholder.com/300?text=Image+6",
-  "https://via.placeholder.com/300?text=Image+7",
-  "https://via.placeholder.com/300?text=Image+8",
-  "https://i.pinimg.com/originals/7e/45/0f/7e450f80598feb3e152744b1cc3dd851.jpg",
-  "https://via.placeholder.com/300?text=Image+10",
+  "https://content.jdmagicbox.com/comp/lucknow/n5/0522px522.x522.191217214046.t2n5/catalogue/fotoshoot-lucknow-lucknow-photo-studios-aic8b0128m.jpg",
+
+  "https://5.imimg.com/data5/SELLER/Default/2024/7/434294286/MJ/RQ/QY/54327629/wedding-photography.jpg",
+  "https://ryasktourism.com/wp-content/uploads/2024/02/weading-photoshoot-in-kolkata.webp",
+  "https://content.jdmagicbox.com/comp/lucknow/n5/0522px522.x522.191217214046.t2n5/catalogue/fotoshoot-lucknow-lucknow-photo-studios-aic8b0128m.jpg",
+  "https://media.weddingz.in/images/a90f38730aa60834c1b8f8e2b89ba80b/wedding-poses-and-pre-wedding-photography-poses-Indian-couple14.jpg",
+  "https://kamatharjun.b-cdn.net/wp-content/uploads/2022/01/Indian-Wedding-Photography-LR-Arjun-Kamath.jpeg",
+  // "https://i.pinimg.com/originals/7e/45/0f/7e450f80598feb3e152744b1cc3dd851.jpg",
+  "https://magica.in/media/posts/135/gallery//2.webp",
 ];
 
 function ImageSlider() {
@@ -27,13 +26,13 @@ function ImageSlider() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-gray-100">
-      <div className="relative w-full max-w-lg">
-        <div className="overflow-hidden rounded-lg shadow-lg">
+    <div className="flex flex-col items-center justify-center">
+      <div className="relative w-screen">
+        <div className=" rounded-lg shadow-lg w-full">
           <img
             src={images[currentIndex]}
             alt={`Slide ${currentIndex + 1}`}
-            className="w-full object-cover transition-all duration-500 ease-in-out"
+            className=" w-full  h-fit object-cover bg-cover transition-all duration-500"
           />
         </div>
         <button
@@ -49,7 +48,7 @@ function ImageSlider() {
           &#8250;
         </button>
       </div>
-      <div className="mt-4 flex gap-2">
+      {/* <div className="mt-4 flex gap-2">
         {images.map((_, index) => (
           <button
             key={index}
@@ -59,7 +58,7 @@ function ImageSlider() {
             }`}
           />
         ))}
-      </div>
+      </div> */}
     </div>
   );
 }

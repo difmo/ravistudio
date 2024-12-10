@@ -4,7 +4,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white py-8">
+    <footer className="bg-[#171717] text-white py-8">
       {/* Contact Information */}
       <div className="flex flex-col justify-center text-center md:text-left mb-8">
         <h2 className="text-xl font-bold mb-2">Contact Us</h2>
