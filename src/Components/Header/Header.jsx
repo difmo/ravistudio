@@ -19,7 +19,7 @@ const Header = () => {
   ];
 
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center py-2">
     <header className="bg-black text-secondary w-4/5 rounded-full">
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
         {/* Logo */}
